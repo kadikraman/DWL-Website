@@ -1288,3 +1288,9 @@ footer {
 .selected-text {
   color: #e85356;
 }
+
+.selectable-img:hover {
+  -moz-box-shadow: -1px 0px 19px #e85355;
+  -webkit-box-shadow: -1px 0px 19px #e85355;
+  box-shadow: -1px 0px 19px #e85355;
+}
