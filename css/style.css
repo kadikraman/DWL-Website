@@ -1294,3 +1294,8 @@ footer {
   -webkit-box-shadow: -1px 0px 19px #C32D97;
   box-shadow: -1px 0px 19px #C32D97;
 }
+
+.copyright {
+  float: right;
+  margin-top: 20px
+}
