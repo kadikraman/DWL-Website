@@ -1299,3 +1299,16 @@ footer {
   float: right;
   margin-top: 20px
 }
+
+.small-title {
+  color: #C32D97;
+  font-weight: bold;
+}
+
+.bullet-list{
+   text-indent: 20px;
+}
+
+.empty-line {
+  padding-bottom: 10px;
+}
