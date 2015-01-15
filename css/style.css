@@ -1296,7 +1296,7 @@ footer {
 }
 
 .copyright {
-  float: right;
+  text-align: center;
   margin-top: 20px
 }
 
