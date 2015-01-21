@@ -1297,12 +1297,13 @@ footer {
 
 .copyright {
   text-align: center;
-  margin-top: 20px
+  margin-top: 10px;
+  font-size: 12px;
 }
 
 .small-title {
   color: #C32D97;
-  font-weight: bold;
+  font-size: 16px;
 }
 
 .bullet-list{
@@ -1311,4 +1312,9 @@ footer {
 
 .empty-line {
   padding-bottom: 10px;
+}
+
+.img-small {
+  height: 80%;
+  width: 80%;
 }
