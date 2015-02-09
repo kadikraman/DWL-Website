@@ -1318,3 +1318,11 @@ footer {
   height: 80%;
   width: 80%;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
