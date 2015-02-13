@@ -1,8 +1,12 @@
 # DWL-Website
 
-## Setting up dev encironement
+## Setting up dev environement
 - Get Python
 - Get pip
-- pip install django
+- pip install -r requirements.txt
 - python manage.py migrate
 - python manage.py runserver
+
+## Tests
+There are some! Such excitement.
+python manage.py test dwl - to run the tests
