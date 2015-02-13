@@ -11,6 +11,7 @@ urlpatterns = patterns('',
 
     url(r'^$', views.HomeView.as_view(), name='home'),
     url(r'^news/', include('news.urls')),
+    url(r'^about_us/', include('about_us.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
 

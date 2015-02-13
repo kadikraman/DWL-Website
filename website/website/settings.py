@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'about_us',
     'news',
 )
 
@@ -93,5 +94,6 @@ STATICFILES_DIRS = (
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
+    os.path.join(BASE_DIR, 'about_us/templates'),
     os.path.join(BASE_DIR, 'news/templates'),
 )
