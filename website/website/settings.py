@@ -39,6 +39,7 @@ INSTALLED_APPS = (
 
     'about_us',
     'services',
+    'gallery',
     'news',
     'contact',
 )
@@ -98,6 +99,7 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
     os.path.join(BASE_DIR, 'about_us/templates'),
     os.path.join(BASE_DIR, 'services/templates'),
-    os.path.join(BASE_DIR, 'contact/templates'),
+    os.path.join(BASE_DIR, 'gallery/templates'),
     os.path.join(BASE_DIR, 'news/templates'),
+    os.path.join(BASE_DIR, 'contact/templates'),
 )

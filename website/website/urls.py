@@ -10,9 +10,10 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^$', views.HomeView.as_view(), name='home'),
-    url(r'^news/', include('news.urls')),
     url(r'^about_us/', include('about_us.urls')),
     url(r'^services/', include('services.urls')),
+    url(r'^gallery/', include('gallery.urls')),
+    url(r'^news/', include('news.urls')),
     url(r'^contact/', include('contact.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
