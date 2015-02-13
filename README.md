@@ -9,4 +9,4 @@
 
 ## Tests
 There are some! Such excitement.
-python manage.py test dwl - to run the tests
+python manage.py test news - to run the tests

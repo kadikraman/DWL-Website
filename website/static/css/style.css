@@ -915,7 +915,7 @@ footer {
     padding-right: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 980px) and (max-width: 980px) {
   .navbar_ .btn {
     display: none !important;
   }
@@ -969,7 +969,7 @@ footer {
     width: 74%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 979px) {
   body {
     padding: 0;
   }
@@ -1317,4 +1317,12 @@ footer {
 .img-small {
   height: 80%;
   width: 80%;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
 }

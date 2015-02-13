@@ -37,8 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'dwl',
-    'bootstrap3',
+    'news',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -94,4 +93,5 @@ STATICFILES_DIRS = (
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
+    os.path.join(BASE_DIR, 'news/templates'),
 )
