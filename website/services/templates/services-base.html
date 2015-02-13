@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Teenused{% endblock %}
+{% block teenused %}active{% endblock %}
+
+{% block content %}
+
+ <div id="content"><div class="ic"></div>
+      <div class="container">
+        <div class="row">
+          <article class="span12">
+            <h3>Teenused</h3>
+          </article>
+          <div class="bg-content">
+            <div class="content">
+              <div class="container">
+                <div class="row">
+                  <ul class="thumbnails thumbnails-1">
+                    <li class="span3">
+                      <div class="thumbnail thumbnail-1 center">
+                        <h3>Üritused</h3>
+                        <a href="events/"><img class="selectable-img" src="{% static 'img/index/events-thumbn.jpg' %}" alt=""></a>
+                      </div>
+                    </li>
+                    <li class="span3">
+                      <div class="thumbnail thumbnail-1 center">
+                        <h3>Pildistamine</h3>
+                        <a href="photoshoots/"><img class="selectable-img" src="{% static 'img/index/photography-thumbn.jpg' %}" alt=""></a>
+                      </div>
+                    </li>
+                    <li class="span3">
+                      <div class="thumbnail thumbnail-1 center">
+                        <h3>Stilistika</h3>
+                        <a href="stylistics/"><img class="selectable-img" src="{% static 'img/index/stylistics-thumbn.jpg' %}" alt=""></a>
+                      </div>
+                    </li>
+                    <li class="span3">
+                      <div class="thumbnail thumbnail-1 center">
+                        <h3 class="title-1 extra">PR teenused</h3>
+                        <a href="public_relations/"><img class="selectable-img" src="{% static 'img/index/public-relations-thumbn.jpg' %}" alt=""></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+{% block details %}
+{% endblock %}
+
+{% endblock %}
