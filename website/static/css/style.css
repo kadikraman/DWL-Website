@@ -1279,13 +1279,13 @@ footer {
   padding-top: 20px;
 }
 
-.selected-img {
+.selected-service img {
   -moz-box-shadow: -1px 0px 19px #C32D97;
   -webkit-box-shadow: -1px 0px 19px #C32D97;
   box-shadow: -1px 0px 19px #C32D97;
 }
 
-.selected-text {
+.selected-service h3 {
   color: #C32D97;
 }
 

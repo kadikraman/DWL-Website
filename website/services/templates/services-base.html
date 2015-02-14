@@ -18,27 +18,27 @@
                 <div class="row">
                   <ul class="thumbnails thumbnails-1">
                     <li class="span3">
-                      <div class="thumbnail thumbnail-1 center">
+                      <div class="thumbnail thumbnail-1 center {% block uritused %}{% endblock %}">
                         <h3>Üritused</h3>
-                        <a href="events/"><img class="selectable-img" src="{% static 'img/index/events-thumbn.jpg' %}" alt=""></a>
+                        <a href="/services/events/"><img class="selectable-img" src="{% static 'img/index/events-thumbn.jpg' %}" alt=""></a>
                       </div>
                     </li>
                     <li class="span3">
-                      <div class="thumbnail thumbnail-1 center">
+                      <div class="thumbnail thumbnail-1 center {% block pildistamine %}{% endblock %}">
                         <h3>Pildistamine</h3>
-                        <a href="photoshoots/"><img class="selectable-img" src="{% static 'img/index/photography-thumbn.jpg' %}" alt=""></a>
+                        <a href="/services/photoshoots/"><img class="selectable-img" src="{% static 'img/index/photography-thumbn.jpg' %}" alt=""></a>
                       </div>
                     </li>
                     <li class="span3">
-                      <div class="thumbnail thumbnail-1 center">
+                      <div class="thumbnail thumbnail-1 center {% block stilistika %}{% endblock %}">
                         <h3>Stilistika</h3>
-                        <a href="stylistics/"><img class="selectable-img" src="{% static 'img/index/stylistics-thumbn.jpg' %}" alt=""></a>
+                        <a href="/services/stylistics/"><img class="selectable-img" src="{% static 'img/index/stylistics-thumbn.jpg' %}" alt=""></a>
                       </div>
                     </li>
                     <li class="span3">
-                      <div class="thumbnail thumbnail-1 center">
+                      <div class="thumbnail thumbnail-1 center {% block pr_teenused %}{% endblock %}">
                         <h3 class="title-1 extra">PR teenused</h3>
-                        <a href="public_relations/"><img class="selectable-img" src="{% static 'img/index/public-relations-thumbn.jpg' %}" alt=""></a>
+                        <a href="/services/public_relations/"><img class="selectable-img" src="{% static 'img/index/public-relations-thumbn.jpg' %}" alt=""></a>
                       </div>
                     </li>
                   </ul>
