@@ -1,0 +1,15 @@
+<div id="content"><div class="ic"></div>
+    <div class="container">
+        <div class="row">
+        <article class="span12">
+            <h3>{{ entry.title }}</h3>
+            <a href="#" class="comments">9 comments</a>
+            <p class="subheader">
+                <time>{{ entry.modified_at|date }}</time>
+            </p>
+            {{ entry.body|linebreaks }}
+            <a href="{{ entry.get_absolute_url }}">Loe edasi</a>
+        </article>
+        </div>
+    </div>
+</div>

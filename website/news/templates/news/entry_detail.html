@@ -1,0 +1,17 @@
+{% extends "news.html" %}
+
+{% block content %}
+<div id="content"><div class="ic"></div>
+    <div class="container">
+        <div class="row">
+        <article class="span12">
+            <h3>{{ entry.title }}</h3>
+            <p class="subheader">
+                <time>{{ entry.modified_at|date }}</time>
+            </p>
+            {{ entry.body|linebreaks }}
+        </article>
+        </div>
+    </div>
+</div>
+{% endblock %}

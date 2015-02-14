@@ -5,5 +5,9 @@
 {% block uudised %}active{% endblock %}
 
 {% block content %}
-
-{% endblock %}
+    {% for entry in entry_list %}
+        {% include "_entry.html" with entry=entry only %}
+    {% empty %}
+        <p>No news entries yet.</p>
+    {% endfor %}
+{% endblock content %}
