@@ -9,7 +9,7 @@
             <p class="subheader">
                 <time>{{ entry.modified_at|date }}</time>
             </p>
-            {{ entry.body|linebreaks }}
+            {{ entry.body|urlize|linebreaks }}
         </article>
         </div>
     </div>
