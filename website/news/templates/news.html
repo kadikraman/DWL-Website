@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Uudised{% endblock %}
+{% block uudised %}active{% endblock %}
+
+{% block content %}
+    {% for entry in entry_list %}
+        {% include "_entry.html" with entry=entry only %}
+    {% empty %}
+    <div id="content"><div class="ic"></div>
+        <div class="container">
+            <div class="row">
+            <article class="span12">
+                <h3><p>Pole veel uudiseid.</p></h3>
+            </article>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+{% endblock content %}

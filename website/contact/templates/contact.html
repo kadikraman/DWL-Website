@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Kontakt{% endblock %}
+{% block kontakt %}active{% endblock %}
+
+{% block content %}
+<div id="content"><div class="ic"></div>
+    <div class="container">
+          <div class="row">
+        <article class="span8">
+              <h3>Kirjuta meile</h3>
+              <div class="inner-1">
+            <form id="contact-form">
+                  <div class="success"> Sõnum saadetud! <strong>Võtame varsti ühendust.</strong> </div>
+                  <fieldset>
+                <div>
+                    <label class="name">
+                    <input type="text" placeholder="Sinu nimi">
+                  <br>
+                    <span class="error">*See ei ole valiidne nimi.</span> <span class="empty">*See on kohustulik väli.</span> </label>
+                    </div>
+                  <div>
+                    <label class="phone">
+                    <input type="tel" placeholder="Telefon">
+                    <br>
+                    <span class="error">*See ei ole valiidne mobiili number.</span> <span class="empty">*See on kohustulik väli.</span> </label>
+                    </div>
+                <div>
+                    <label class="email">
+                    <input type="email" placeholder="E-mail">
+                    <br>
+                    <span class="error">*See ei ole valiidne meili aadress.</span> <span class="empty">*See on kohustulik väli.</span> </label>
+                    </div>
+                <div>
+                    <label class="message">
+                    <textarea placeholder="Sõnum"></textarea>
+                    <br>
+                    <span class="error">*Sõnum on liiga lühike.</span> <span class="empty">*See on kohustulik väli.</span> </label>
+                    </div>
+                <div class="buttons-wrapper"> <a class="btn btn-1" data-type="submit" onclick="alert('Meili saatmine kodulehelt on hetkel häiritud. Vabandame.')">Saada</a></div>
+              </fieldset>
+                </form>
+          </div>
+            </article>
+        <article class="span4">
+              <h3>Kontaktinfo</h3>
+              <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2029.1334633838067!2d24.7450675!3d59.4308486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692949ec4a37b27%3A0xd111235da8f29916!2sP%C3%A4rnu+maantee+28%2C+10141+Tallinn%2C+Estonia!5e0!3m2!1sen!2suk!4v1420978260009" frameborder="0" style="border:0"></iframe>
+          </div>
+          <address class="address-1">
+         <div>
+          <span>Aadress:</span> Pärnu mnt 28-5, Tallinn, 10141<br>
+            <span>Telefon:</span>+372 77 65 016<br>
+            <span>E-mail:</span> <a href="mailto:sirli@dwlagentuur.ee" class="mail-1">info@dwlagentuur.ee</a><br>
+          </div>
+          </address>
+            </article>
+      </div>
+        </div>
+  </div>
+    </div>
+{% endblock %}
