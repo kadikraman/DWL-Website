@@ -13,6 +13,12 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
+# adds mime types for displaying .svg images
+import mimetypes
+mimetypes.add_type("image/svg+xml", ".svg", True)
+mimetypes.add_type("image/svg+xml", ".svgz", True)
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -20,11 +26,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '$1x^plxkz83&2$)-#_hj*=1iuj1*_*ivdv&)h4dbjozh)5sqi('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '.dwlagentuur.ee',  # Allow domain and subdomains
+    '.dwlagentuur.ee.',  # Also allow FQDN and subdomains
+]
+
+APPEND_SLASH = True
 
 
 # Application definition
