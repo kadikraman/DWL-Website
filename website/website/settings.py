@@ -33,6 +33,7 @@ TEMPLATE_DEBUG = False
 ALLOWED_HOSTS = [
     '.dwlagentuur.ee',  # Allow domain and subdomains
     '.dwlagentuur.ee.',  # Also allow FQDN and subdomains
+    '.dwlagentuur.ee/*',
 ]
 
 APPEND_SLASH = True
