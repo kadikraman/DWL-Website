@@ -26,15 +26,9 @@ mimetypes.add_type("image/svg+xml", ".svgz", True)
 SECRET_KEY = '$1x^plxkz83&2$)-#_hj*=1iuj1*_*ivdv&)h4dbjozh)5sqi('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 TEMPLATE_DEBUG = False
-
-ALLOWED_HOSTS = [
-    '.dwlagentuur.ee',  # Allow domain and subdomains
-    '.dwlagentuur.ee.',  # Also allow FQDN and subdomains
-    '.dwlagentuur.ee/*',
-]
 
 APPEND_SLASH = True
 
