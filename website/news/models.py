@@ -1,11 +1,12 @@
 from django.db import models
 from django.core.urlresolvers import reverse
+from tinymce import models as tinymce_models
 
 # Create your models here.
 class Entry(models.Model):
     title = models.CharField(max_length=500)
     author = models.ForeignKey('auth.User')
-    body = models.TextField()
+    body = tinymce_models.HTMLField()
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     modified_at = models.DateTimeField(auto_now=True, editable=False)
 

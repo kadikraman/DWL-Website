@@ -6,7 +6,7 @@
             <p class="subheader">
                 <time>{{ entry.modified_at|date }} by {{ entry.author}}</time>
             </p>
-            {{ entry.body|urlize|linebreaks|truncatewords:100 }}
+            {{ entry.body|safe|urlize|linebreaks|truncatewords:100 }}
             <p>
                 <a href="{{ entry.get_absolute_url }}">Loe edasi</a>
             </p>
